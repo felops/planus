@@ -1,16 +1,21 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import { Container, Section } from "../global"
 
 const GetStarted = () => (
-  <StyledSection>
-    <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
-      <Subtitle>No credit card required.</Subtitle>
-    </GetStartedContainer>
-  </StyledSection>
+  <Section id="simulação">
+    <StyledSection>
+      <GetStartedContainer>
+        <GetStartedTitle>Planeje seu futuro</GetStartedTitle>
+        <LinkNav to="/simulacao">
+          <TryItButton>Fazer simulação</TryItButton>
+        </LinkNav>
+        <Subtitle>Não vai levar mais que 2 minutos ;)</Subtitle>
+      </GetStartedContainer>
+    </StyledSection>
+  </Section>
 )
 
 export default GetStarted
@@ -31,6 +36,10 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
+`
+
+const LinkNav = styled(Link)`
+  text-decoration: none;
 `
 
 const TryItButton = styled.button`

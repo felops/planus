@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter SaaS Marketing`,
-    description: `A simple one page marketing starter for saas companies.`,
-    author: `Keegan Burkett`,
+    title: `PLANUS`,
+    description: `Planejamento Financeiro Simplificado`,
+    author: `Felipe Lopes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
